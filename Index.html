@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Private Talkroom</title>
+    <style>
+        body { background: #121212; color: white; text-align: center; font-family: sans-serif; }
+        video { width: 40%; max-width: 400px; background: #222; border-radius: 10px; margin: 10px; }
+        input, button { padding: 10px; font-size: 16px; margin: 5px; }
+    </style>
+    <script src="https://unpkg.com"></script>
+</head>
+<body>
+    <h1>Private Talkroom</h1>
+    <p>Your ID Code: <strong id="my-id" style="color: cyan;">Connecting...</strong></p>
+    <input type="text" id="friend-id" placeholder="Paste friend's ID here">
+    <button id="call-btn">Connect Video</button>
+    <br>
+    <video id="local-video" autoplay playsinline muted></video>
+    <video id="remote-video" autoplay playsinline></video>
+    <script src="script.js"></script>
+</body>
+</html>
